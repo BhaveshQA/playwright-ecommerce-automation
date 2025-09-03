@@ -1,0 +1,16 @@
+{
+    "valid" : {
+
+        "name" : "Bhavesh",
+        "email" : "bhavesh_1@gmail.com"
+    },
+
+    "invalid":{
+      "name" : "bhavesh",
+      "email" : "bhavesh@"
+    },
+    "duplicateEmail" : {
+        "name": "Bhavesh",
+        "email" : "bhavesh_1@gmail.com"
+    }
+}
