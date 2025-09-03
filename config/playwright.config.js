@@ -6,7 +6,7 @@ export default defineConfig({
   retries: 1,
   timeout: 30 * 1000, // 30s
   use: {
-    headless: false,
+    headless: process.env.CI ? true : false,
     viewport: { width: 1280, height: 720 },
     baseURL: "https://automationexercise.com",
     actionTimeout: 0, // no limit
