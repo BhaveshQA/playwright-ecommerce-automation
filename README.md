@@ -20,7 +20,7 @@ It automates various workflows of an e-commerce application — from login, prod
 ---
 
 ## 📁 Project Structure
-
+```
 playwright-ecommerce-automation/
 │
 ├── 📂 pages/ # Page Object classes (each page as separate class)
@@ -34,9 +34,7 @@ playwright-ecommerce-automation/
 ├── playwright.config.js # Playwright configuration file
 ├── package.json # NPM dependencies and scripts̨̨
 └── README.md # Project documentation
-
-
----̨
+```
 
 ## 🧠 Key Features
 
