@@ -50,16 +50,16 @@ playwright-ecommerce-automation/
 
 ## ⚙️ Installation & Setup
 
-### 1️⃣ Clone the repository
+###  Clone the repository
 ```bash
 git clone https://github.com/BhaveshQA/playwright-ecommerce-automation.git
 cd playwright-ecommerce-automation
 
-## Install dependencies ##
+### Install dependencies
 npm install
 
-## Run tests ##
+### Run tests 
 npx playwright test tests/login.spec.js --config=config/playwright.config.js --project=chromium --headed
 
-## View HTML Report ##
+### View HTML Report 
 View HTML Report
