@@ -56,22 +56,18 @@ playwright-ecommerce-automation/
 git clone https://github.com/BhaveshQA/playwright-ecommerce-automation.git
 cd playwright-ecommerce-automation
 2️⃣ Install dependencies
-
 npm install
+
 3️⃣ Run tests
-
-
 npx playwright test
+
 4️⃣ View HTML Report
 After test execution, view the report:
-
-
 npx playwright show-report
+
 🧩 Example Test Flow
 Example: Add product to cart and validate checkout
-
-javascript
-Copy code
+```
 test('User should be able to add product to cart', async ({ page }) => {
   const loginPage = new LoginPage(page);
   const homePage = new HomePage(page);
@@ -82,6 +78,8 @@ test('User should be able to add product to cart', async ({ page }) => {
   await homePage.addProductToCart('Wireless Headphones');
   await cartPage.verifyProductInCart('Wireless Headphones');
 });
+
+```
 🧱 Framework Design (POM Concept)
 Test File → Defines test scenario and assertions.
 
@@ -93,15 +91,12 @@ Utils → Shared methods (logging, waits, date utils, etc.).
 
 TestData → External JSON for data-driven testing.
 
-csharp
-Copy code
+
 Test → calls → PageObject → interacts with → Web Elements
 🧰 Example Folder Explanation
 pages/
 Each page class represents one web page and exposes high-level actions:
 
-javascript
-Copy code
 class LoginPage {
   constructor(page) {
     this.page = page;
@@ -116,11 +111,10 @@ class LoginPage {
     await this.loginBtn.click();
   }
 }
+
 tests/
 Contains Playwright test files using Playwright Test syntax:
 
-javascript
-Copy code
 import { test } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
 
@@ -128,6 +122,8 @@ test('Verify login functionality', async ({ page }) => {
   const login = new LoginPage(page);
   await login.login('test@example.com', 'Password123');
 });
+
+
 🧩 Upcoming Enhancements
  Add Allure Reports integration
 
@@ -149,7 +145,7 @@ test('Verify login functionality', async ({ page }) => {
 🧑‍💻 Author
 👤 Bhavesh Rathod
 💼 QA Automation Engineer | Playwright | JavaScript | API Automation
-📧 LinkedIn (Add your profile link here)
+📧 LinkedIn https: https://www.linkedin.com/in/bhavesh-rathod-38b89615/
 📂 GitHub
 
 ⭐ How to Contribute
